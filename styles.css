@@ -4,32 +4,106 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #171618;
+    background-color: #141414;
   }
 
   .search-container {
     display: flex;
     align-items: center;
-    border-radius: 25px;
+    justify-content: center;
+    border-radius: 7px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #444141;
+    margin-bottom: 20px;
   }
 
   .search-bar {
     border: none;
     padding: 10px;
-    width: 200px;
-    border-radius: 25px 0 0 25px;
+    width: 100%;
+    border-radius: 7px 0 0 7px;
     outline: none;
+    background-color: #232323
   }
 
   .search-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #3e3f41;
+    color: #754d4d;
     border: none;
     padding: 10px 15px;
     border-radius: 0 25px 25px 0;
     cursor: pointer;
     outline: none;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: center;
+    margin: 20px;
+    color: rgb(249, 249, 249);
+  }
+
+  .text h2 {
+    margin-bottom: 10px;
+  }
+
+  .text h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .text ul li {
+    margin: 0 10px;
+    position: relative;
+  }
+
+  .text ul li::after {
+    content: '\2713';
+    color: #007bff;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    z-index: 1;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+  }
+
+  .blue-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  .blue-button:first-child {
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+
+  .blue-button:last-child {
+    margin-left: 5px; /* Adjust the margin as needed */
   }
